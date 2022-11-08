@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viemport" content="width=device-width, initial-scale=1.0">
+            <title>Exemplo Formulário</title>
+        </head>
+        <body>
+            <form action="exemplo.php" method="get">
+                <fieldset>
+                <label>
+                    Nome: <input type="text" size="50" maxlength="30"
+                    name="txtnome">
+                </label>
+                <br><br>
+                <label>
+                    Email: <input type="email" size="50" maxlength="50"
+                    name="txtemail">
+                </label>
+            </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Gênero: </legend>
+                    <input type="radio" name="rdbgênro" value="feminino">Feminino 
+                    <input type="radio" name="rdbgênro" value="masculino">Masculino 
+                    <input type="radio" name="rdbgênro" value="outro">Outro 
+                </fieldset>
+                <br><br>
+                Deixe sua mensagem: <br><textarea name="txtmensagem" cols="30" rows="10">Digite sua mensagem...</textarea>
+                <p>
+                    <input type="submit" name="btnenviar" value="Enviar mensagem">
+                    <input type="reset" name="btnlimpar" value="Limpar">
+                </p>
+            </form>
+        </body>
+    </html>
